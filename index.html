@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Projects — Chitrangna</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
@@ -37,19 +37,19 @@
                 </li>
                 <div class="nav-links-mobile" id="navLinksMobile">
                     <li>
-                        <a class="header-a nav-link" href="index.html">Home</a>
+                        <a class="header-a nav-link active" href="index.html" data-section="home">Home</a>
                     </li>
                     <li>
-                        <a class="header-a nav-link" href="index.html#about">about</a>
+                        <a class="header-a nav-link" href="#about" data-section="about">about</a>
                     </li>
                     <li>
-                        <a class="header-a nav-link active" href="projects.html">projects</a>
+                        <a class="header-a nav-link" href="projects.html">projects</a>
                     </li>
                     <li>
-                        <a class="header-a nav-link" href="index.html#contact">contact</a>
+                        <a class="header-a nav-link" href="#contact" data-section="contact">contact</a>
                     </li>
                     <li>
-                        <a class="header-a nav-link" href="index.html#skills">skills</a>
+                        <a class="header-a nav-link" href="#skills" data-section="skills">skills</a>
                     </li>
                 </div>
             </div>
@@ -69,20 +69,113 @@
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </button>
         </ul>
+        
     </header> <!--header-end-here-->
+    <section class="main" id="home">
+        <div class="main-2">
+            <div class="badge">
+                Hello! I am Chitrangna
+            </div>
+            <h1 class="main-h1">
+                Building beautiful and impactful web experiences.
+            </h1>
+            <p class="main-p">Frontend Developer &amp; Future Startup Founder.</p>
 
-    <!-- page hero -->
-    <section class="page-hero">
-        <span class="project-tag">My Work</span>
-        <h1>All Projects</h1>
-        <p class="projects-intro">
-            Everything I've built so far, from small daily-practice apps to
-            full-scale sites — a running record of what I've been learning
-            and shipping on the MERN stack journey.
-        </p>
+            <div class="social-icons">
+               <a href="https://linkedin.com/in/chitrangna-885abb413" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/chitrangna-dev" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:chitrangna@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div><!--main-2-end-here-->
+        <div class="my-image">
+            <img class="img" src="my-image.PNG" alt="Profile">
+            <div class="circle">
+                       
+            </div>
+        </div>
+    </section><!--main end-here-->
+    <section id="about">
+        <div class="aside1" data-reveal>
+            <img class="my-img2" src="my-image.PNG" alt="Chitrangna's profile photo">
+            <span class="aside1-badge">B.Tech CSE</span>
+        </div>
+        <div class="aside2" data-reveal>
+            <span class="about-tag">Get To Know Me</span>
+            <h2>About Me</h2>
+            <p class="text">
+                I'm Chitrangna — a frontend-focused MERN stack developer who
+                turns ideas into clean, responsive interfaces. Curious by
+                nature, currently exploring AI, and always chasing the next
+                problem worth solving.
+            </p>
+
+            <div class="about-highlights">
+                <div class="highlight-chip">
+                    <i class="fa-solid fa-code"></i>
+                    MERN Stack Developer
+                </div>
+                <div class="highlight-chip">
+                    <i class="fa-solid fa-location-dot"></i>
+                    India
+                </div>
+                <div class="highlight-chip">
+                    <i class="fa-solid fa-robot"></i>
+                    Learning AI
+                </div>
+                <div class="highlight-chip">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Open to Internships
+                </div>
+                <div class="highlight-chip">
+                    <i class="fa-solid fa-puzzle-piece"></i>
+                    Problem Solver
+                </div>
+            </div>
+
+            <div class="about-buttons">
+                <button class="resume2">
+                    Download Resume
+                </button>
+                <a href="#projects" class="view-projects-btn">
+                    View Projects
+                </a>
+            </div>
+
+            <div class="about-stats">
+                <div class="about-stat">
+                    <h3>15+</h3>
+                    <span>Projects</span>
+                </div>
+                <div class="about-stat">
+                    <h3>500+</h3>
+                    <span>Coding Hours</span>
+                </div>
+                <div class="about-stat">
+                    <h3>5+</h3>
+                    <span>Technologies</span>
+                </div>
+                <div class="about-stat">
+                    <h3>100%</h3>
+                    <span>Dedication</span>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
-    <section class="projects" id="all-projects">
+    <section class="projects" id="projects">
+
+    <div class="projects-header">
+        <span class="project-tag">My Work</span>
+        <h2>Featured Projects</h2>
+    </div>
 
     <div class="project-grid">
 
@@ -174,228 +267,114 @@
             </div>
         </div>
 
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-music"></i></div>
-                <img src="project-music-player.jpg" alt="Music Player preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>Music Player</h3>
-                <p>
-                    A simple, functional music player built with the native HTML5
-                    Audio API — play, pause, skip, seek, and control volume across
-                    a custom playlist, with a clean UI-driven playlist selector.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://music-player-eta-rosy.vercel.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/music-player" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-list-check"></i></div>
-                <img src="project-task-manager.jpg" alt="SproutTasks Task Manager preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>SproutTasks — Task Manager</h3>
-                <p>
-                    A clean to-do list app with add, complete, and delete actions,
-                    live search, and active/completed filters — tasks persist
-                    across sessions using localStorage, with a live counter for
-                    total and completed tasks.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://sprouttasks.netlify.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/task-manager" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-repeat"></i></div>
-                <img src="project-palindrome-checker.jpg" alt="Palindrome Checker preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>Palindrome Checker</h3>
-                <p>
-                    A lightweight tool that checks whether a word or phrase reads
-                    the same forwards and backwards, with instant, color-coded
-                    feedback and a friendly prompt if the input is left empty.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://palinchecker.netlify.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/palindrome-checker" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-draw-polygon"></i></div>
-                <img src="project-triangle-analyzer.jpg" alt="Triangle Analyzer preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>Triangle Analyzer</h3>
-                <p>
-                    Enter three angles and instantly find out if they form a
-                    valid triangle, then see its exact type — equilateral,
-                    right, obtuse, isosceles, or scalene — with input
-                    validation and a one-click reset.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://playwithangle.netlify.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/triangle-analyzer-/tree/main" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-plus-minus"></i></div>
-                <img src="project-counter-app.jpg" alt="Counter App preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>Counter App</h3>
-                <p>
-                    A minimal counter with increase, decrease, and reset controls
-                    — the decrease action is guarded so the count never drops
-                    below zero, keeping the state predictable and clean.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://countmonitor.netlify.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/javascript-counter-app" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-hand-scissors"></i></div>
-                <img src="project-rock-paper-scissors.jpg" alt="Rock Paper Scissors Game preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>Rock Paper Scissors Game</h3>
-                <p>
-                    A classic Rock, Paper, Scissors game — pick a move, the
-                    computer picks its own at random, and the scoreboard
-                    updates instantly with a clean, responsive UI and smooth
-                    hover animations on each choice.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                    <span class="tech-badge">JavaScript</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://handsfight.netlify.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/rock-paper-scissors" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-card">
-            <div class="project-thumb">
-                <div class="project-thumb-fallback"><i class="fa-solid fa-tags"></i></div>
-                <img src="project-pricing-card.jpg" alt="Responsive Pricing Card preview" loading="lazy" onerror="this.style.display='none'">
-                <span class="project-badge live"><i class="fa-solid fa-circle"></i> Live</span>
-            </div>
-            <div class="project-body">
-                <h3>Responsive Pricing Card</h3>
-                <p>
-                    A clean, three-tier pricing section with a highlighted
-                    "Popular" plan, animated hover states on cards and
-                    buttons, and a fully responsive grid that stacks
-                    gracefully down to a single column on mobile.
-                </p>
-                <div class="tech-stack">
-                    <span class="tech-badge">HTML</span>
-                    <span class="tech-badge">CSS</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://pricing-card-mauve.vercel.app/" class="project-link live" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/chitrangna-dev/responsive-pricing-card" class="project-link github" target="_blank" rel="noopener">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!--
-            Naye project cards yahin isi pattern mein add karo:
-            (1) .project-thumb ke andar ek fallback icon + preview image
-            (2) .project-body mein title, description, tech-stack badges
-            (3) .project-links mein Live Demo aur GitHub button
-            Bas real live link aur GitHub repo link daal dena — layout,
-            animation aur hover states already sab .project-card class se
-            aa rahe hain, koi extra CSS nahi likhni padegi.
-        -->
-
     </div>
 
     <div class="view-all-wrap">
-        <a href="index.html" class="view-all-btn">
-            <i class="fa-solid fa-arrow-left"></i> Back to Home
+        <a href="projects.html" class="view-all-btn">
+            View All Projects <i class="fa-solid fa-arrow-right"></i>
         </a>
+    </div>
+
+</section>
+
+<!--section of contact (projects ke baad, skills se pehle)-->
+<section class="contact" id="contact">
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <span class="contact-tag">Let's Connect</span>
+
+            <h2>Get In Touch</h2>
+
+            <p>
+                Have a project in mind, want to collaborate,
+                or just say hello? Feel free to reach out.
+                I would love to hear from you.
+            </p>
+
+            <div class="contact-info">
+                <div>
+                    <h4>Email</h4>
+                    <p>chitrangnao901@gmail.com</p>
+                </div>
+
+                <div>
+                    <h4>Location</h4>
+                    <p>India</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="text" placeholder="Subject">
+
+                <textarea rows="5" placeholder="Your Message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!--section of skills (sabse last, footer se pehle)-->
+<section class="skills-section" id="skills">
+
+    <div class="skills-container">
+
+        <span class="skills-tag">My Toolkit</span>
+
+        <h2>Skills & Technologies</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fa-brands fa-html5"></i>
+                <h4>HTML</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h4>CSS</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-js"></i>
+                <h4>JavaScript</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-react"></i>
+                <h4>React</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-node-js"></i>
+                <h4>Node.js</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-java"></i>
+                <h4>Java</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-git-alt"></i>
+                <h4>Git</h4>
+            </div>
+
+            <div class="skill-card">
+                <i class="fa-brands fa-github"></i>
+                <h4>GitHub</h4>
+            </div>
+
+        </div>
+
     </div>
 
 </section>
@@ -441,5 +420,7 @@
 </button>
 <script src="script.js"></script>
 
+    
+    
 </body>
 </html>
